@@ -1,0 +1,22 @@
+[project]
+name = "banking77-llm-vs-ml"
+version = "0.1.0"
+description = ""Banking77 intent classification: LLM (Gemini, Groq) vs classical ML baseline - accuracy, cost, latency""
+readme = "README.md"
+authors = [
+    { name = "Salal Yousuf", email = "85499847+Salal10@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "google-genai>=2.31.0",
+    "jupyter>=1.1.1",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+]
+
+[project.scripts]
+banking77-llm-vs-ml = "banking77_llm_vs_ml:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
