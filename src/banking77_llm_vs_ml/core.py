@@ -6,6 +6,9 @@ from google.genai import types
 from pydantic import BaseModel
 from sklearn.model_selection import train_test_split
 
+import random
+import httpx
+
 BASE = "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/master/banking_data"
 
 PROMPT_V1 = """You classify customer messages sent to a bank's support team.
